@@ -1,0 +1,2 @@
+# EdiTable
+whale browser extension
