@@ -1,0 +1,46 @@
+body {
+  padding: 5px;
+}
+.vertical-line {
+  border-left: 2px solid rgb(200, 200, 200);
+  margin: 0 5px;
+}
+#mode-select-buttons {
+  display: flex;
+  padding-bottom: 5px;
+}
+.mode-select-button {
+  display: inline-block;
+  padding: 6px;
+  width: 65px;
+
+  background-color: transparent;
+  border: none;
+  outline: none;
+
+  cursor: pointer;
+}
+.mode-select-button:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.mode-select-button img {
+  display: block;
+  margin: 0 auto 8px;
+  width: 20px;
+  height: 20px;
+  pointer-events: none;
+}
+.mode-select-button span {
+  font-size: 12px;
+  pointer-events: none;
+}
+
+#handling-result-select-radios {
+  padding: 5px 8px 0;
+}
+#handling-result-select-radios div:first-of-type {
+  margin-bottom: 10px;
+}
+#handling-result-select-radios div {
+  margin: 6px 0;
+}

@@ -1,0 +1,9 @@
+.picked-effect {
+  position: absolute;
+  background-color: rgba(100, 0, 0, 0.1);
+  pointer-events: none;
+  z-index: 200;
+}
+.hide {
+  display: none;
+}

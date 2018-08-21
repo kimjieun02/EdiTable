@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <title>editable</title>
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+    <div id="mode-select-buttons">
+      <button id="cursor-select-mode" class="mode-select-button" title="Ctrl+Shift+3">
+        <img src="../images/cursor-select.png">
+        <span>직접지정</span>
+      </button>
+      <div class="vertical-line"></div>
+      <button id="element-select-mode" class="mode-select-button" title="Ctrl+Shift+4">
+        <img src="../images/element-select.png">
+        <span>영역선택</span>
+      </button>
+    </div>
+    <hr/>
+    <div id="handling-result-select-radios">
+      <div>선택 후 동작</div>
+      <div>
+        <input type="radio" name="handling-result" value="edit" id="edit-table-radio" checked/>
+        <label for="edit-table-radio">편집 창 열기</label>
+      </div>
+      <div>
+        <input type="radio" name="handling-result" value="download-csv" id="download-csv-radio">
+        <label for="download-csv-radio">CSV 파일로 저장</label>
+      </div>
+      <div>
+        <input type="radio" name="handling-result" value="download-xls" id="download-xls-radio">
+        <label for="download-xls-radio">엑셀 파일로 저장</label>
+      </div>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
