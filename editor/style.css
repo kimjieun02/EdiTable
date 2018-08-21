@@ -1,0 +1,167 @@
+html, body {
+  width: 100%;
+  height: 100%;
+}
+body {
+  margin: 0;
+}
+
+header {
+  background-color: rgb(200, 200, 200);
+  height: 70px;
+  position: relative;
+}
+
+header p {
+  position: absolute;
+  margin: 0;
+  bottom: 8px;
+  left: 15px;
+  color: rgb(100, 100, 100);
+  font-size: 24px;
+  font-weight: 700;
+}
+
+#tables {
+  position: relative;
+  display: inline-block;
+
+  width: 100%;
+  height: 100%;
+
+  min-width: 400px;
+
+  box-sizing: border-box;
+  border: 1px solid rgb(200, 200, 200);
+}
+#tool-bar {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 30px;
+  background-color: rgb(220, 220, 220);
+}
+#tool-bar nav {
+  flex-shrink: 1;
+  flex-grow: 1;
+  padding-left: 6px;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+#tool-bar nav button {
+  width: 80px;
+  height: 100%;
+  background-color: rgb(230, 230, 230);
+  border: 1px solid rgb(180, 180, 180);
+  border-top-color: rgb(230, 230, 230);
+  border-right: none;
+  border-bottom: none;
+  outline: none;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+#tool-bar nav button:last-of-type {
+  border-right: 1px solid rgb(180, 180, 180);
+}
+#tool-bar nav button:hover {
+  background-color: rgb(255, 255, 255);
+  border-top-color: rgb(255, 255, 255);
+}
+#tool-bar nav button.selected {
+  background-color: rgb(255, 255, 255);
+  border-top-color: rgb(255, 255, 255);
+}
+
+.vertical-line {
+  border-left: 2px solid rgb(200, 200, 200);
+  margin: 0 5px;
+}
+
+#export-btn-container {
+  display: flex;
+  box-sizing: border-box;
+  vertical-align: top;
+}
+#export-btn-container button {
+  border: 1px solid rgb(180, 180, 180);
+  background-color: rgb(240, 240, 240);
+  height: 24px;
+  margin-top: 3px;
+  margin-right: 5px;
+  padding: 0 10px;
+  cursor: pointer;
+  vertical-align: center;
+}
+#export-btn-container button:hover {
+  background-color: rgb(255, 255, 255);
+}
+
+.sheet {
+  display: inline-block;
+  box-sizing: border-box;
+  position: relative;
+
+  width: 100%;
+  height: calc(100% - 28px);
+  overflow: scroll;
+}
+
+.hide, .fake-cell {
+  display: none;
+}
+
+table {
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+table * {
+  text-align: left;
+  max-width: 80px;
+  min-width: 80px;
+  height: 14px;
+  padding: 5px;
+  border: 1px solid rgb(220, 220, 220);
+  font-size: 13px;
+
+  overflow: scroll;
+  white-space: nowrap;
+  font-weight: 400;
+  -webkit-user-select: text;
+}
+table *::-webkit-scrollbar {
+  display: none;
+}
+
+.table-header {
+  text-align: center;
+  background-color: rgb(230, 230, 230);
+  min-width: 0;
+  padding: 5px 8px;
+}
+
+#charts {
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  width: calc(30% - 70px);
+  height: calc(100% - 158px);
+  border: 1px solid rgb(200, 200, 200);
+  overflow-y: scroll;
+  padding: 10px;
+  box-sizing: border-box;
+}
+#charts li {
+  list-style: none;
+
+}
+
+#select-effect {
+  position: absolute;
+  box-sizing: border-box;
+  border: 2px solid rgb(42, 136, 255);
+  pointer-events: none;
+}
