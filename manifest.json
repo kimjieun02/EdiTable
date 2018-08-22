@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "editable",
-  "version": "1.0.0",
+  "version": "1.0.1",
 
   "default_locale": "ko",
   "description": "웹 페이지의 테이블을 쉽게 가져올 수 있도록 도와드립니다.",
