@@ -1,14 +1,14 @@
 {
   "manifest_version": 2,
   "name": "editable",
-  "version": "1.0.0",
+  "version": "1.0.1",
+
+  "default_locale": "ko",
+  "description": "웹 페이지의 테이블을 쉽게 가져올 수 있도록 도와드립니다.",
   "icons": {
     "256": "images/icon-256.png"
   },
-  "background": {
-    "scripts": ["background.js"],
-    "persistent": false
-  },
+
   "browser_action": {
     "default_popup": "popup/index.html",
     "default_icon": {
@@ -16,25 +16,30 @@
     },
     "default_title": "editable (Ctrl+Shift+E)"
   },
+
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
   "commands": {
     "_execute_browser_action": {
       "suggested_key": {
         "default": "Ctrl+Shift+E",
-        "mac": "Command+Shift+E"
+        "mac": "MacCtrl+Shift+E"
       },
       "description": "open pop-up for mode selection"
     },
     "cursor-select-mode": {
       "suggested_key": {
         "default": "Ctrl+Shift+3",
-        "mac": "Command+Shift+3"
+        "mac": "MacCtrl+Shift+3"
       },
       "description": "run range select function"
     },
     "element-select-mode": {
       "suggested_key": {
         "default": "Ctrl+Shift+4",
-        "mac": "Command+Shift+4"
+        "mac": "MacCtrl+Shift+4"
       },
       "description": "run element select function"
     }
