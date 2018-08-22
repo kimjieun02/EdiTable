@@ -2,19 +2,24 @@
   "manifest_version": 2,
   "name": "editable",
   "version": "1.0.0",
+
+  "default_locale": "ko",
+  "description": "웹 페이지의 테이블을 쉽게 가져올 수 있도록 도와드립니다.",
   "icons": {
     "256": "images/icon-256.png"
   },
-  "background": {
-    "scripts": ["background.js"],
-    "persistent": false
-  },
+
   "browser_action": {
     "default_popup": "popup/index.html",
     "default_icon": {
       "256": "images/icon-256.png"
     },
     "default_title": "editable (Ctrl+Shift+E)"
+  },
+
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
   },
   "commands": {
     "_execute_browser_action": {
