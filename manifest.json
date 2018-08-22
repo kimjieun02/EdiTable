@@ -25,21 +25,21 @@
     "_execute_browser_action": {
       "suggested_key": {
         "default": "Ctrl+Shift+E",
-        "mac": "Command+Shift+E"
+        "mac": "MacCtrl+Shift+E"
       },
       "description": "open pop-up for mode selection"
     },
     "cursor-select-mode": {
       "suggested_key": {
         "default": "Ctrl+Shift+3",
-        "mac": "Command+Shift+3"
+        "mac": "MacCtrl+Shift+3"
       },
       "description": "run range select function"
     },
     "element-select-mode": {
       "suggested_key": {
         "default": "Ctrl+Shift+4",
-        "mac": "Command+Shift+4"
+        "mac": "MacCtrl+Shift+4"
       },
       "description": "run element select function"
     }
